@@ -83,6 +83,6 @@ my_red        = "#ef0000" # URL, constants
 my_green      = "#4c4c4c" # Strings, Inherited Class, Markup Code, Diff Inserted
 my_brown      = "#696969" # Member variables, Quotes
 my_yellow1    = "#000000" # Functions, Methods, Attribute IDs, Headings
-my_yellow2    = "#808080" # Debug, Info
+my_yellow2    = "#ffcc00" # Debug, Info
 my_red2       = "#000000" # Keywords, Storage, Selector, Diff Changed
 my_darkgray   = "#9d9d9d" # Punctuation (delimiter, brackets etc)
