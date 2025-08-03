@@ -1,87 +1,88 @@
 # The structure is based on `autumn` by Jens Getreu.
 # This color scheme is inspired by 'vimr-256noir' by Andreas van Cranenburgh
 
-"ui.background" = { bg = "my_gray0" }
-"ui.menu" = { fg = "my_white", bg = "my_gray2" }
-"ui.menu.selected" = { fg = "my_gray2", bg = "my_gray5" }
-"ui.linenr" = { fg = "my_gray3", bg = "my_gray0" }
-"ui.popup" = { bg = "my_gray2" }
-"ui.window" = { fg = "my_gray3", bg = "my_gray2" }
-"ui.linenr.selected" = { fg = "my_gray6", bg = "my_gray0"}
-"ui.selection" = { bg = "my_gray3" }
-"comment" = { fg = "my_gray4", modifiers = ["italic"] }
-"ui.cursorline" = { bg = "my_gray3" }
-"ui.statusline" = { fg = "my_gray6", bg = "my_gray2" }
-"ui.statusline.inactive" = { fg = 'my_gray4', bg = 'my_gray2' }
-"ui.statusline.insert" = {fg = "my_black", bg = "my_gray5", modifiers = ["bold"]}
-"ui.statusline.normal" = {fg = "my_gray6", bg = "my_gray2"}
-"ui.statusline.select" = {fg = "my_gray6", bg = "my_black", modifiers = ["bold"]}
-"ui.cursor" = { fg = "my_gray5", modifiers = ["reversed"] }
-"ui.cursor.primary" = { fg = "my_white", modifiers = ["reversed"] }
-"ui.cursorline.primary" = { bg = "my_black" }
-"ui.cursorline.secondary" = { bg = "my_black" }
-"ui.text" = "my_white"
-"operator" = "my_white"
-"ui.text.focus" = "my_white"
-"variable" = "my_white3"
-"constant.numeric" = "my_turquoise"
-"constant" = "my_white3"
-"attribute" = "my_turquoise"
-"type" = { fg = "my_white3", modifiers = ["italic"] }
-"ui.cursor.match" = { fg = "my_white3", modifiers = ["underlined"] }
-"string"  = "my_green"
-"variable.other.member" = "my_brown"
-"constant.character.escape" = "my_turquoise"
-"function" = "my_yellow1"
-"constructor" = "my_yellow1"
-"special" = "my_yellow1"
-"keyword" = "my_red"
-"label" = "my_red"
-"namespace" = "my_white3"
-"ui.help" = { fg = "my_gray6", bg = "my_gray2" }
-"ui.virtual.whitespace" = { fg = "my_gray5" }
-"ui.virtual.ruler" = { bg = "my_gray1" }
-"punctuation" = "my_darkgray"
+"ui.background" = { bg = "bg0" }
+"ui.menu" = { fg = "fg1", bg = "bg1" }
+"ui.menu.selected" = { fg = "bg1", bg = "gray2" }
+"ui.linenr" = { fg = "gray2", bg = "bg0" }
+"ui.popup" = { bg = "bg1" }
+"ui.window" = { fg = "gray2", bg = "bg1" }
+"ui.linenr.selected" = { fg = "fg1", bg = "bg0"}
+"ui.selection" = { bg = "gray2" }
+"comment" = { fg = "gray1", modifiers = ["italic"] }
+"ui.cursorline" = { bg = "gray2" }
+"ui.statusline" = { fg = "fg1", bg = "bg1" }
+"ui.statusline.inactive" = { fg = 'dark_gray', bg = 'bg1' }
+"ui.statusline.insert" = {fg = "light_black", bg = "gray2", modifiers = ["bold"]}
+"ui.statusline.normal" = {fg = "fg1", bg = "bg1"}
+"ui.statusline.select" = {fg = "fg1", bg = "light_black", modifiers = ["bold"]}
+"ui.cursor" = { fg = "gray2", modifiers = ["reversed"] }
+"ui.cursor.primary" = { fg = "fg0", modifiers = ["reversed"] }
+"ui.cursorline.primary" = { bg = "light_black" }
+"ui.cursorline.secondary" = { bg = "light_black" }
+"ui.text" = "fg1"
+"operator" = "gray0"
+"ui.text.focus" = "fg1"
+"variable" = "white0"
+"constant.numeric" = "red0"
+"constant" = "white0"
+"attribute" = "red0"
+"type" = { fg = "white0", modifiers = ["italic"] }
+"ui.cursor.match" = { fg = "white0", modifiers = ["underlined"] }
+"string"  = "white1"
+"variable.other.member" = "white4"
+"constant.character.escape" = "gray1"
+"function" = "white2"
+"constructor" = "white2"
+"special" = "white2"
+"keyword" = { fg = "white3", modifiers = ["bold"] }
+"label" = "white3"
+"namespace" = "white0"
+"ui.help" = { fg = "fg1", bg = "bg1" }
+"ui.virtual.whitespace" = { fg = "gray2" }
+"ui.virtual.ruler" = { bg = "light_black" }
+"punctuation" = "gray3"
 
-"markup.heading" = "my_yellow1"
-"markup.list" = "my_white2"
+"markup.heading" = "white2"
+"markup.list" = "fg1"
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = {  modifiers = ["italic"] }
-"markup.link.url" = "my_turquoise2"
-"markup.link.text" = "my_white2"
-"markup.quote" = "my_brown"
-"markup.raw" = "my_green"
+"markup.link.url" = "red0"
+"markup.link.text" = "fg0"
+"markup.quote" = "white4"
+"markup.raw" = "white1"
 
-"diff.plus" = "my_green"
-"diff.delta" = "my_white"
-"diff.minus" = "my_red"
+"diff.plus" = "white1"
+"diff.delta" = "fg0"
+"diff.minus" = "red0"
 
 "diagnostic" = { modifiers = ["underlined"] }
-"ui.gutter" = { bg = "my_gray0" }
-"hint" = "my_gray5"
-"debug" = "my_yellow2"
-"info" = "my_yellow2"
-"warning" = "my_yellow2"
-"error" = "my_red"
+"ui.gutter" = { bg = "bg0" }
+"hint" = "gray2"
+"debug" = "yellow0"
+"info" = "yellow0"
+"warning" = "yellow0"
+"error" = "red0"
 
 [palette]
-my_black      = "#151515" # Cursorline
-my_gray0      = "#0c0c0c" # Default Background
-my_gray1      = "#0e0e0e" # Ruler
-my_gray2      = "#1a1a1a" # Lighter Background (Used for status bars, line number and folding marks)
-my_gray3      = "#323232" # Selection Background
-my_gray4      = "#898989" # Comments, Invisibles, Line Highlighting
-my_gray5      = "#aaaaaa" # Dark Foreground (Used for status bars)
-my_gray6      = "#c4c4c4" # Light Foreground (Not often used)
-my_gray7      = "#e8e8e8" # Light Background (Not often used)
-my_white      = "#bdbdbd" # Default Foreground, Caret, Delimiters, Operators
-my_white2     = "#b0b0b0" # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
-my_white3     = "#cccccc" # Classes, Markup Bold, Search Text Background
-my_turquoise  = "#eb0000" # Support, Regular Expressions, Escape Characters
-my_turquoise2 = "#a70000" # URL
-my_green      = "#a8a8a8" # Strings, Inherited Class, Markup Code, Diff Inserted
-my_brown      = "#d3d3d3" # Member variables, Quotes
-my_yellow1    = "#ffffff" # Functions, Methods, Attribute IDs, Headings
-my_yellow2    = "#f9f9f9" # Debug, Info
-my_red        = "#f2f2f2" # Keywords, Storage, Selector, Diff Changed
-my_darkgray   = "#7a7a7a" # Punctuation (delimiter, brackets etc)
+bg0         = "#000000" # default background
+bg1         = "#181818" # lighter background (status bars, folding marks)
+
+light_black = "#151515" # cursorline, ruler
+
+gray0       = "#757575" # operators
+gray1       = "#666666" # comments, escape characters
+gray2       = "#363636" # line numbers, selection, windows, whitespaces, hints
+gray3       = "#545454" # punctuation 
+
+fg0         = "#ffffff" # cursor and diff.delta
+fg1         = "#cccccc" # default foreground
+
+yellow0     = "#f0e200" # debug, info, warnings
+red0        = "#eb0000" # constant numbers
+
+white0      = "#adadad" # variables, constants, types, namespaces, search text background 
+white1      = "#737373" # strings, diff.plus
+white2      = "#f7f7f7" # functions, constructors
+white3      = "#d9d9d9" # keywords, labels
+white4      = "#d6d6d6" # member variables
