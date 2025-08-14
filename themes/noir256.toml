@@ -28,7 +28,7 @@
 "constant" = "white0"
 "attribute" = "red0"
 "type" = { fg = "white0", modifiers = ["italic"] }
-"ui.cursor.match" = { fg = "white0", modifiers = ["underlined"] }
+"ui.cursor.match" = { fg = "white0", modifiers = ["bold", "slow_blink"] }
 "string"  = "white1"
 "variable.other.member" = "white4"
 "constant.character.escape" = "gray1"
@@ -56,7 +56,7 @@
 "diff.delta" = "fg0"
 "diff.minus" = "red0"
 
-"diagnostic" = { modifiers = ["underlined"] }
+"diagnostic" = { underline = {color="red0", style="curl"}}
 "ui.gutter" = { bg = "bg0" }
 "hint" = "gray2"
 "debug" = "yellow0"

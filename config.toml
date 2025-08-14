@@ -1,8 +1,9 @@
-theme = "noir256_light"
+theme = "noir256"
 
 [editor]
 true-color = true
 cursorline = true
+undercurl = true
 
 [editor.statusline]
 right = ["diagnostics", "selections", "register", "position", "position-percentage", "file-encoding"]
@@ -21,6 +22,9 @@ insert = "bar"
 
 [editor.whitespace.render]
 newline = "all"
+
+[editor.whitespace.characters]
+newline = ""
 
 [editor.indent-guides]
 render = true
