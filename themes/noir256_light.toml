@@ -28,19 +28,20 @@
 "constant" = "my_white3"
 "attribute" = "my_turquoise"
 "type" = { fg = "my_white3", modifiers = ["italic"] }
-"ui.cursor.match" = { fg = "my_white3", modifiers = ["underlined"] }
+"ui.cursor.match" = { fg = "my_white3", modifiers = ["bold", "slow_blink"] }
 "string"  = "my_green"
 "variable.other.member" = "my_brown"
 "constant.character.escape" = "my_turquoise"
 "function" = "my_yellow1"
 "constructor" = "my_yellow1"
 "special" = "my_yellow1"
-"keyword" = "my_red2"
+"keyword" = { fg = "my_red2", modifiers = ["bold"] }
 "label" = "my_red2"
 "namespace" = "my_white3"
 "ui.help" = { fg = "my_gray6", bg = "my_gray2" }
 "ui.virtual.whitespace" = { fg = "my_gray5" }
 "ui.virtual.ruler" = { bg = "my_gray1" }
+"ui.virtual.jump-label" = { fg = "my_white3", modifiers = ["reversed"] }
 "punctuation" = "my_darkgray"
 
 "markup.heading" = "my_yellow1"
@@ -56,7 +57,7 @@
 "diff.delta" = "my_white"
 "diff.minus" = "my_red"
 
-"diagnostic" = { modifiers = ["underlined"] }
+"diagnostic" = { underline = {color="my_red", style="curl"}}
 "ui.gutter" = { bg = "my_gray0" }
 "hint" = "my_gray5"
 "debug" = "my_yellow2"
@@ -75,7 +76,7 @@ my_comment    = "#a9a9a9" # Comments
 my_gray5      = "#d4d4d4" # Dark Foreground (Used for status bars)
 my_gray6      = "#383838" # Light Foreground (Not often used)
 my_gray7      = "#e0e0e0" # Light Background (Not often used)
-my_white      = "#000000" # Default Foreground, Caret, Delimiters, Operators
+my_white      = "#212121" # Default Foreground, Caret, Delimiters, Operators
 my_blue       = "#0000ff" # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
 my_white3     = "#808080" # Classes, Markup Bold, Search Text Background
 my_turquoise  = "#9e9e9e" # Support, Regular Expressions, Escape Characters

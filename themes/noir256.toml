@@ -23,36 +23,37 @@
 "ui.text" = "fg1"
 "operator" = "gray0"
 "ui.text.focus" = "fg1"
-"variable" = "white0"
+"variable" = "white2"
 "constant.numeric" = "red0"
-"constant" = "white0"
+"constant" = "white2"
 "attribute" = "red0"
-"type" = { fg = "white0", modifiers = ["italic"] }
-"ui.cursor.match" = { fg = "white0", modifiers = ["bold", "slow_blink"] }
-"string"  = "white1"
-"variable.other.member" = "white4"
+"type" = { fg = "white2", modifiers = ["italic"] }
+"ui.cursor.match" = { fg = "white2", modifiers = ["bold", "slow_blink"] }
+"string"  = "white3"
+"variable.other.member" = "white0"
 "constant.character.escape" = "gray1"
-"function" = "white2"
-"constructor" = "white2"
-"special" = "white2"
-"keyword" = { fg = "white3", modifiers = ["bold"] }
-"label" = "white3"
-"namespace" = "white0"
+"function" = "white4"
+"constructor" = "white4"
+"special" = "white4"
+"keyword" = { fg = "white1", modifiers = ["bold"] }
+"label" = "white1"
+"namespace" = "white2"
 "ui.help" = { fg = "fg1", bg = "bg1" }
 "ui.virtual.whitespace" = { fg = "gray2" }
 "ui.virtual.ruler" = { bg = "light_black" }
+"ui.virtual.jump-label" = { fg = "white2", modifiers = ["reversed"] }
 "punctuation" = "gray3"
 
-"markup.heading" = "white2"
+"markup.heading" = "white4"
 "markup.list" = "fg1"
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = {  modifiers = ["italic"] }
-"markup.link.url" = "red0"
+"markup.link.url" = "white2"
 "markup.link.text" = "fg0"
-"markup.quote" = "white4"
-"markup.raw" = "white1"
+"markup.quote" = "white0"
+"markup.raw" = "white3"
 
-"diff.plus" = "white1"
+"diff.plus" = "white3"
 "diff.delta" = "fg0"
 "diff.minus" = "red0"
 
@@ -81,8 +82,8 @@ fg1         = "#cccccc" # default foreground
 yellow0     = "#f0e200" # debug, info, warnings
 red0        = "#eb0000" # constant numbers
 
-white0      = "#adadad" # variables, constants, types, namespaces, search text background 
-white1      = "#737373" # strings, diff.plus
-white2      = "#f7f7f7" # functions, constructors
-white3      = "#d9d9d9" # keywords, labels
-white4      = "#d6d6d6" # member variables
+white0      = "#d6d6d6" # member variables
+white1      = "#d9d9d9" # keywords, labels
+white2      = "#adadad" # variables, constants, types, namespaces, search text background 
+white3      = "#737373" # strings, diff.plus
+white4      = "#f7f7f7" # functions, constructors
