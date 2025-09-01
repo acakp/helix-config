@@ -1,89 +1,90 @@
 # The structure is based on `autumn` by Jens Getreu.
-# This color scheme is inspired by 'vim-256noir' by Andreas van Cranenburgh
+# This color scheme is inspired by 'vimr-256noir' by Andreas van Cranenburgh
 
-"ui.background" = { bg = "my_gray0" }
-"ui.menu" = { fg = "my_white", bg = "my_gray2" }
-"ui.menu.selected" = { fg = "my_gray2", bg = "my_gray5" }
-"ui.linenr" = { fg = "my_gray4", bg = "my_gray0" }
-"ui.popup" = { bg = "my_gray2" }
-"ui.window" = { fg = "my_gray3", bg = "my_gray2" }
-"ui.linenr.selected" = { fg = "my_gray6", bg = "my_gray0"}
-"ui.selection" = { bg = "my_gray3" }
-"comment" = { fg = "my_comment", modifiers = ["italic"] }
-"ui.cursorline" = { bg = "my_gray3" }
-"ui.statusline" = { fg = "my_gray6", bg = "my_gray2" }
-"ui.statusline.inactive" = { fg = 'my_gray4', bg = 'my_gray2' }
-"ui.statusline.insert" = {fg = "my_black", bg = "my_gray5", modifiers = ["bold"]}
-"ui.statusline.normal" = {fg = "my_gray6", bg = "my_gray2"}
-"ui.statusline.select" = {fg = "my_gray6", bg = "my_black", modifiers = ["bold"]}
-"ui.cursor" = { fg = "my_gray5", modifiers = ["reversed"] }
-"ui.cursor.primary" = { fg = "my_white", modifiers = ["reversed"] }
-"ui.cursorline.primary" = { bg = "my_black" }
-"ui.cursorline.secondary" = { bg = "my_black" }
-"ui.text" = "my_white"
-"operator" = "my_white"
-"ui.text.focus" = "my_white"
-"variable" = "my_white3"
-"constant.numeric" = "my_red"
-"constant" = "my_white3"
-"attribute" = "my_turquoise"
-"type" = { fg = "my_white3", modifiers = ["italic"] }
-"ui.cursor.match" = { fg = "my_white3", modifiers = ["bold", "slow_blink"] }
-"string"  = "my_green"
-"variable.other.member" = "my_brown"
-"constant.character.escape" = "my_turquoise"
-"function" = "my_yellow1"
-"constructor" = "my_yellow1"
-"special" = "my_yellow1"
-"keyword" = { fg = "my_red2", modifiers = ["bold"] }
-"label" = "my_red2"
-"namespace" = "my_white3"
-"ui.help" = { fg = "my_gray6", bg = "my_gray2" }
-"ui.virtual.whitespace" = { fg = "my_gray5" }
-"ui.virtual.ruler" = { bg = "my_gray1" }
-"ui.virtual.jump-label" = { fg = "my_white3", modifiers = ["reversed"] }
-"punctuation" = "my_darkgray"
+"ui.background" = { bg = "bg0" }
+"ui.menu" = { fg = "fg1", bg = "bg1" }
+"ui.menu.selected" = { fg = "bg1", bg = "gray0" }
+"ui.linenr" = { fg = "gray0", bg = "bg0" }
+"ui.popup" = { bg = "bg1" }
+"ui.window" = { fg = "gray0", bg = "bg1" }
+"ui.linenr.selected" = { fg = "fg1", bg = "bg0"}
+"ui.selection" = { bg = "gray0" }
+"comment" = { fg = "gray1", modifiers = ["italic"] }
+"ui.cursorline" = { bg = "gray0" }
+"ui.statusline" = { fg = "fg1", bg = "bg1" }
+"ui.statusline.inactive" = { fg = 'dark_gray', bg = 'bg1' }
+"ui.statusline.insert" = {fg = "light_black", bg = "gray0", modifiers = ["bold"]}
+"ui.statusline.normal" = {fg = "fg1", bg = "bg1"}
+"ui.statusline.select" = {fg = "fg1", bg = "light_black", modifiers = ["bold"]}
+"ui.cursor" = { fg = "gray0", modifiers = ["reversed"] }
+"ui.cursor.primary" = { fg = "fg0", modifiers = ["reversed"] }
+"ui.cursorline.primary" = { bg = "light_black" }
+"ui.cursorline.secondary" = { bg = "light_black" }
+"ui.text" = "fg1"
+"operator" = "gray3"
+"ui.text.focus" = "fg1"
+"variable" = "white3"
+"constant.numeric" = "red0"
+"constant" = "white3"
+"attribute" = "red0"
+"type" = { fg = "white3", modifiers = ["italic"] }
+"ui.cursor.match" = { fg = "white3", modifiers = ["bold", "slow_blink"] }
+"string"  = "white4"
+"variable.other.member" = "white1"
+"constant.character.escape" = "gray1"
+"function" = "white0"
+"constructor" = "white0"
+"special" = "white0"
+"keyword" = { fg = "white2", modifiers = ["bold"] }
+"label" = "white2"
+"namespace" = "white3"
+"ui.help" = { fg = "fg1", bg = "bg1" }
+"ui.virtual.whitespace" = { fg = "gray0" }
+"ui.virtual.ruler" = { bg = "light_black" }
+# "ui.virtual.jump-label" = { fg = "white3", modifiers = ["reversed"] }
+"ui.virtual.jump-label" = { fg = "fg0", modifiers = ["bold", "italic"] }
+"punctuation" = "gray2"
 
-"markup.heading" = "my_yellow1"
-"markup.list" = "my_blue"
+"markup.heading" = "white0"
+"markup.list" = "fg1"
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = {  modifiers = ["italic"] }
-"markup.link.url" = "my_red"
-"markup.link.text" = "my_blue"
-"markup.quote" = "my_brown"
-"markup.raw" = "my_green"
+"markup.link.url" = "white3"
+"markup.link.text" = "fg0"
+"markup.quote" = "white1"
+"markup.raw" = "white4"
 
-"diff.plus" = "my_green"
-"diff.delta" = "my_white"
-"diff.minus" = "my_red"
+"diff.plus" = "white4"
+"diff.delta" = "fg0"
+"diff.minus" = "red0"
 
-"diagnostic" = { underline = {color="my_red", style="curl"}}
-"ui.gutter" = { bg = "my_gray0" }
-"hint" = "my_gray5"
-"debug" = "my_yellow2"
-"info" = "my_yellow2"
-"warning" = "my_yellow2"
-"error" = "my_red"
+"diagnostic" = { underline = {color="red0", style="curl"}}
+"ui.gutter" = { bg = "bg0" }
+"hint" = "gray0"
+"debug" = "yellow0"
+"info" = "yellow0"
+"warning" = "yellow0"
+"error" = "red0"
 
 [palette]
-my_black      = "#ffffff" # Cursorline
-my_gray0      = "#fafafa" # Default Background
-my_gray1      = "#eeeeee" # Ruler
-my_gray2      = "#eeeeee" # Lighter Background (Used for status bars and folding marks)
-my_gray3      = "#ebe6e6" # Selection Background
-my_gray4      = "#cfcfcf" # Invisibles, Line Highlighting, Line Numbers
-my_comment    = "#a9a9a9" # Comments
-my_gray5      = "#d4d4d4" # Dark Foreground (Used for status bars)
-my_gray6      = "#383838" # Light Foreground (Not often used)
-my_gray7      = "#e0e0e0" # Light Background (Not often used)
-my_white      = "#212121" # Default Foreground, Caret, Delimiters, Operators
-my_blue       = "#0000ff" # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
-my_white3     = "#808080" # Classes, Markup Bold, Search Text Background
-my_turquoise  = "#9e9e9e" # Support, Regular Expressions, Escape Characters
-my_red        = "#ef0000" # URL, constants
-my_green      = "#4c4c4c" # Strings, Inherited Class, Markup Code, Diff Inserted
-my_brown      = "#696969" # Member variables, Quotes
-my_yellow1    = "#000000" # Functions, Methods, Attribute IDs, Headings
-my_yellow2    = "#ffcc00" # Debug, Info
-my_red2       = "#000000" # Keywords, Storage, Selector, Diff Changed
-my_darkgray   = "#9d9d9d" # Punctuation (delimiter, brackets etc)
+bg0         = "#fafafa" # default background
+bg1         = "#eeeeee" # lighter background (status bars, folding marks)
+
+light_black = "#ffffff" # cursorline, ruler
+
+gray0       = "#cfcfcf" # line numbers, selection, windows, whitespaces, hints
+gray1       = "#a9a9a9" # comments, escape characters
+gray2       = "#9d9d9d" # punctuation 
+gray3       = "#828282" # operators
+
+fg0         = "#d4d4d4" # cursor and diff.delta
+fg1         = "#212121" # default foreground
+
+yellow0     = "#ffcc00" # debug, info, warnings
+red0        = "#ef0000" # constant numbers
+
+white0      = "#000000" # functions, constructors
+white1      = "#696969" # member variables
+white2      = "#000000" # keywords, labels
+white3      = "#525252" # variables, constants, types, namespaces, search text background 
+white4      = "#4c4c4c" # strings, diff.plus
