@@ -23,38 +23,38 @@
 "ui.text" = "fg1"
 "operator" = "gray3"
 "ui.text.focus" = "fg1"
-"variable" = "white2"
+"variable" = "white3"
 "constant.numeric" = "red0"
-"constant" = "white2"
+"constant" = "white3"
 "attribute" = "red0"
-"type" = { fg = "white2", modifiers = ["italic"] }
-"ui.cursor.match" = { fg = "white2", modifiers = ["bold", "slow_blink"] }
-"string"  = "white3"
-"variable.other.member" = "white0"
+"type" = { fg = "white3", modifiers = ["italic"] }
+"ui.cursor.match" = { fg = "white3", modifiers = ["bold", "slow_blink"] }
+"string"  = "white4"
+"variable.other.member" = "white1"
 "constant.character.escape" = "gray1"
-"function" = "white4"
-"constructor" = "white4"
-"special" = "white4"
-"keyword" = { fg = "white1", modifiers = ["bold"] }
-"label" = "white1"
-"namespace" = "white2"
+"function" = "white0"
+"constructor" = "white0"
+"special" = "white0"
+"keyword" = { fg = "white2", modifiers = ["bold"] }
+"label" = "white2"
+"namespace" = "white3"
 "ui.help" = { fg = "fg1", bg = "bg1" }
-"ui.virtual.whitespace" = { fg = "gray0" }
+"ui.virtual.white_space" = { fg = "gray0" }
 "ui.virtual.ruler" = { bg = "light_black" }
-# "ui.virtual.jump-label" = { fg = "white2", modifiers = ["reversed"] }
+# "ui.virtual.jump-label" = { fg = "white3", modifiers = ["reversed"] }
 "ui.virtual.jump-label" = { fg = "fg0", modifiers = ["bold", "italic"] }
 "punctuation" = "gray2"
 
-"markup.heading" = "white4"
+"markup.heading" = "white0"
 "markup.list" = "fg1"
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = {  modifiers = ["italic"] }
-"markup.link.url" = "white2"
+"markup.link.url" = "white3"
 "markup.link.text" = "fg0"
-"markup.quote" = "white0"
-"markup.raw" = "white3"
+"markup.quote" = "white1"
+"markup.raw" = "white4"
 
-"diff.plus" = "white3"
+"diff.plus" = "white4"
 "diff.delta" = "fg0"
 "diff.minus" = "red0"
 
@@ -72,7 +72,7 @@ bg1         = "#181818" # lighter background (status bars, folding marks)
 
 light_black = "#151515" # cursorline, ruler
 
-gray0       = "#363636" # line numbers, selection, windows, whitespaces, hints
+gray0       = "#363636" # line numbers, selection, windows, white_spaces, hints
 gray1       = "#666666" # comments, escape characters
 gray2       = "#545454" # punctuation 
 gray3       = "#757575" # operators
@@ -83,8 +83,8 @@ fg1         = "#cccccc" # default foreground
 yellow0     = "#f0e200" # debug, info, warnings
 red0        = "#eb0000" # constant numbers
 
-white_4      = "#f7f7f7" # functions, constructors
-white_0      = "#d6d6d6" # member variables
-white_1      = "#d9d9d9" # keywords, labels
-white_2      = "#adadad" # variables, constants, types, namespaces, search text background 
-white_3      = "#737373" # strings, diff.plus
+white0      = "#f7f7f7" # functions, constructors
+white1      = "#d6d6d6" # member variables
+white2      = "#d9d9d9" # keywords, labels
+white3      = "#adadad" # variables, constants, types, namespaces, search text background 
+white4      = "#737373" # strings, diff.plus
