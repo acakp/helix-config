@@ -33,6 +33,11 @@ character = "▏"
 [editor.gutters.line-numbers]
 min-width = 1
 
-# unselects selecton and removes additional cursors with esc
 [keys.normal]
+# unselects selecton and removes additional cursors with esc
 esc = ["collapse_selection", "keep_primary_selection"]
+[keys.normal.ret]
+h = ":sh foot helix %{buffer_name}"
+l = ":sh foot lf %{buffer_name}"
+t = ":sh foot -D $(dirname %{buffer_name})"
+ret = ":sh foot -D $(dirname %{buffer_name})"

@@ -3,25 +3,25 @@
 
 "ui.background" = { bg = "bg0" }
 "ui.menu" = { fg = "fg1", bg = "bg1" }
-"ui.menu.selected" = { fg = "bg1", bg = "gray2" }
-"ui.linenr" = { fg = "gray2", bg = "bg0" }
+"ui.menu.selected" = { fg = "bg1", bg = "gray0" }
+"ui.linenr" = { fg = "gray0", bg = "bg0" }
 "ui.popup" = { bg = "bg1" }
-"ui.window" = { fg = "gray2", bg = "bg1" }
+"ui.window" = { fg = "gray0", bg = "bg1" }
 "ui.linenr.selected" = { fg = "fg1", bg = "bg0"}
-"ui.selection" = { bg = "gray2" }
+"ui.selection" = { bg = "gray0" }
 "comment" = { fg = "gray1", modifiers = ["italic"] }
-"ui.cursorline" = { bg = "gray2" }
+"ui.cursorline" = { bg = "gray0" }
 "ui.statusline" = { fg = "fg1", bg = "bg1" }
 "ui.statusline.inactive" = { fg = 'dark_gray', bg = 'bg1' }
-"ui.statusline.insert" = {fg = "light_black", bg = "gray2", modifiers = ["bold"]}
+"ui.statusline.insert" = {fg = "light_black", bg = "gray0", modifiers = ["bold"]}
 "ui.statusline.normal" = {fg = "fg1", bg = "bg1"}
 "ui.statusline.select" = {fg = "fg1", bg = "light_black", modifiers = ["bold"]}
-"ui.cursor" = { fg = "gray2", modifiers = ["reversed"] }
+"ui.cursor" = { fg = "gray0", modifiers = ["reversed"] }
 "ui.cursor.primary" = { fg = "fg0", modifiers = ["reversed"] }
 "ui.cursorline.primary" = { bg = "light_black" }
 "ui.cursorline.secondary" = { bg = "light_black" }
 "ui.text" = "fg1"
-"operator" = "gray0"
+"operator" = "gray3"
 "ui.text.focus" = "fg1"
 "variable" = "white2"
 "constant.numeric" = "red0"
@@ -39,10 +39,11 @@
 "label" = "white1"
 "namespace" = "white2"
 "ui.help" = { fg = "fg1", bg = "bg1" }
-"ui.virtual.whitespace" = { fg = "gray2" }
+"ui.virtual.whitespace" = { fg = "gray0" }
 "ui.virtual.ruler" = { bg = "light_black" }
-"ui.virtual.jump-label" = { fg = "white2", modifiers = ["reversed"] }
-"punctuation" = "gray3"
+# "ui.virtual.jump-label" = { fg = "white2", modifiers = ["reversed"] }
+"ui.virtual.jump-label" = { fg = "fg0", modifiers = ["bold", "italic"] }
+"punctuation" = "gray2"
 
 "markup.heading" = "white4"
 "markup.list" = "fg1"
@@ -59,7 +60,7 @@
 
 "diagnostic" = { underline = {color="red0", style="curl"}}
 "ui.gutter" = { bg = "bg0" }
-"hint" = "gray2"
+"hint" = "gray0"
 "debug" = "yellow0"
 "info" = "yellow0"
 "warning" = "yellow0"
@@ -71,10 +72,10 @@ bg1         = "#181818" # lighter background (status bars, folding marks)
 
 light_black = "#151515" # cursorline, ruler
 
-gray0       = "#757575" # operators
+gray0       = "#363636" # line numbers, selection, windows, whitespaces, hints
 gray1       = "#666666" # comments, escape characters
-gray2       = "#363636" # line numbers, selection, windows, whitespaces, hints
-gray3       = "#545454" # punctuation 
+gray2       = "#545454" # punctuation 
+gray3       = "#757575" # operators
 
 fg0         = "#ffffff" # cursor and diff.delta
 fg1         = "#cccccc" # default foreground
@@ -82,8 +83,8 @@ fg1         = "#cccccc" # default foreground
 yellow0     = "#f0e200" # debug, info, warnings
 red0        = "#eb0000" # constant numbers
 
-white0      = "#d6d6d6" # member variables
-white1      = "#d9d9d9" # keywords, labels
-white2      = "#adadad" # variables, constants, types, namespaces, search text background 
-white3      = "#737373" # strings, diff.plus
-white4      = "#f7f7f7" # functions, constructors
+white_4      = "#f7f7f7" # functions, constructors
+white_0      = "#d6d6d6" # member variables
+white_1      = "#d9d9d9" # keywords, labels
+white_2      = "#adadad" # variables, constants, types, namespaces, search text background 
+white_3      = "#737373" # strings, diff.plus
