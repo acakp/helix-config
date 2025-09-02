@@ -39,7 +39,7 @@
 "label" = "white2"
 "namespace" = "white3"
 "ui.help" = { fg = "fg1", bg = "bg1" }
-"ui.virtual.white_space" = { fg = "gray0" }
+"ui.virtual.whitespace" = { fg = "gray0" }
 "ui.virtual.ruler" = { bg = "light_black" }
 # "ui.virtual.jump-label" = { fg = "white3", modifiers = ["reversed"] }
 "ui.virtual.jump-label" = { fg = "fg0", modifiers = ["bold", "italic"] }
@@ -72,7 +72,7 @@ bg1         = "#181818" # lighter background (status bars, folding marks)
 
 light_black = "#151515" # cursorline, ruler
 
-gray0       = "#363636" # line numbers, selection, windows, white_spaces, hints
+gray0       = "#363636" # line numbers, selection, windows, whitespaces, hints
 gray1       = "#666666" # comments, escape characters
 gray2       = "#545454" # punctuation 
 gray3       = "#757575" # operators
