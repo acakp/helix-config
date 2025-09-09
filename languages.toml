@@ -1,9 +1,16 @@
+ # for python install ruff and python-lsp-server packages
 [[language]]
 name = "python"
 
-# In case you'd like to use ruff alongside black for code formatting:
-formatter = { command = "black", args = ["--quiet", "-"] }
+language-servers = ["ruff", "pylsp"]
 auto-format = true
+
+[language-server.pylsp.config.pylsp]
+plugins.ruff.enabled = true
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
 
 [[language]]
 name = "rust"
