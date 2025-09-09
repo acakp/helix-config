@@ -55,7 +55,7 @@
 "markup.raw" = "white4"
 
 "diff.plus" = "white4"
-"diff.delta" = "fg0"
+"diff.delta" = "fg1"
 "diff.minus" = "red0"
 
 "diagnostic" = { underline = {color="red0", style="curl"}}
@@ -77,8 +77,8 @@ gray1       = "#a9a9a9" # comments, escape characters
 gray2       = "#9d9d9d" # punctuation 
 gray3       = "#828282" # operators
 
-fg0         = "#d4d4d4" # cursor and diff.delta
-fg1         = "#212121" # default foreground
+fg0         = "#ff0000" # cursor
+fg1         = "#212121" # default foreground and diff.delta
 
 yellow0     = "#ffcc00" # debug, info, warnings
 red0        = "#ef0000" # constant numbers
