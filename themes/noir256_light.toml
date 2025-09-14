@@ -28,7 +28,7 @@
 "constant" = "white3"
 "attribute" = "red0"
 "type" = { fg = "white3", modifiers = ["italic"] }
-"ui.cursor.match" = { fg = "white3", modifiers = ["bold", "slow_blink"] }
+"ui.cursor.match" = { fg = "gray1", modifiers = ["bold", "reversed"] }
 "string"  = "white4"
 "variable.other.member" = "white1"
 "constant.character.escape" = "gray1"
@@ -74,17 +74,17 @@ light_black = "#ffffff" # cursorline, ruler
 
 gray0       = "#cfcfcf" # line numbers, selection, windows, whitespaces, hints
 gray1       = "#a9a9a9" # comments, escape characters
-gray2       = "#9d9d9d" # punctuation 
+gray2       = "#a3a3a3" # punctuation 
 gray3       = "#828282" # operators
 
-fg0         = "#ff0000" # cursor
+fg0         = "#000000" # cursor
 fg1         = "#212121" # default foreground and diff.delta
 
 yellow0     = "#ffcc00" # debug, info, warnings
 red0        = "#ef0000" # constant numbers
 
 white0      = "#000000" # functions, constructors
-white1      = "#696969" # member variables
-white2      = "#000000" # keywords, labels
-white3      = "#525252" # variables, constants, types, namespaces, search text background 
-white4      = "#4c4c4c" # strings, diff.plus
+white1      = "#444444" # member variables
+white2      = "#333333" # keywords, labels
+white3      = "#696969" # variables, constants, types, namespaces, search text background 
+white4      = "#797979" # strings, diff.plus

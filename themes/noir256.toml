@@ -28,10 +28,10 @@
 "constant" = "white3"
 "attribute" = "red0"
 "type" = { fg = "white3", modifiers = ["italic"] }
-"ui.cursor.match" = { fg = "white3", modifiers = ["bold", "slow_blink"] }
+"ui.cursor.match" = { fg = "gray1", modifiers = ["bold", "reversed"] }
 "string"  = "white4"
 "variable.other.member" = "white1"
-"constant.character.escape" = "gray1"
+"constant.character.escape" = "gray2"
 "function" = "white0"
 "constructor" = "white0"
 "special" = "white0"
@@ -73,8 +73,8 @@ bg1         = "#181818" # lighter background (status bars, folding marks)
 light_black = "#151515" # cursorline, ruler
 
 gray0       = "#363636" # line numbers, selection, windows, whitespaces, hints
-gray1       = "#666666" # comments, escape characters
-gray2       = "#545454" # punctuation 
+gray1       = "#666666" # comments
+gray2       = "#525252" # punctuation, escape characters 
 gray3       = "#757575" # operators
 
 fg0         = "#ffffff" # cursor and diff.delta
