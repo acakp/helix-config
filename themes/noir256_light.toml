@@ -1,9 +1,9 @@
-# The structure is based on `autumn` by Jens Getreu.
-# This color scheme is inspired by 'vimr-256noir' by Andreas van Cranenburgh
+# The structure is based on "autumn" by Jens Getreu.
+# This color scheme is inspired by "vimr-256noir" by Andreas van Cranenburgh
 
 "ui.background" = { bg = "bg0" }
 "ui.menu" = { fg = "fg1", bg = "bg1" }
-"ui.menu.selected" = { fg = "bg1", bg = "gray0" }
+"ui.menu.selected" = { fg = "fg0", bg = "gray0" }
 "ui.linenr" = { fg = "gray0", bg = "bg0" }
 "ui.popup" = { bg = "bg1" }
 "ui.window" = { fg = "gray0", bg = "bg1" }
@@ -16,10 +16,11 @@
 "ui.statusline.insert" = {fg = "light_black", bg = "gray0", modifiers = ["bold"]}
 "ui.statusline.normal" = {fg = "fg1", bg = "bg1"}
 "ui.statusline.select" = {fg = "fg1", bg = "light_black", modifiers = ["bold"]}
-"ui.cursor" = { fg = "gray0", modifiers = ["reversed"] }
 "ui.cursor.primary" = { fg = "fg0", modifiers = ["reversed"] }
 "ui.cursorline.primary" = { bg = "light_black" }
+"ui.cursor.primary.insert" = { bg = "red0", modifiers = ["reversed"]  }
 "ui.cursorline.secondary" = { bg = "light_black" }
+"ui.cursor.match" = { fg = "gray1", modifiers = ["bold", "reversed"] }
 "ui.text" = "fg1"
 "operator" = "gray3"
 "ui.text.focus" = "fg1"
@@ -28,10 +29,9 @@
 "constant" = "white3"
 "attribute" = "red0"
 "type" = { fg = "white3", modifiers = ["italic"] }
-"ui.cursor.match" = { fg = "gray1", modifiers = ["bold", "reversed"] }
 "string"  = "white4"
 "variable.other.member" = "white1"
-"constant.character.escape" = "gray1"
+"constant.character.escape" = "gray2"
 "function" = "white0"
 "constructor" = "white0"
 "special" = "white0"
@@ -55,7 +55,7 @@
 "markup.raw" = "white4"
 
 "diff.plus" = "white4"
-"diff.delta" = "fg1"
+"diff.delta" = "fg0"
 "diff.minus" = "red0"
 
 "diagnostic" = { underline = {color="red0", style="curl"}}
