@@ -1,0 +1,92 @@
+# The structure is based on "autumn" by Jens Getreu.
+# This color scheme is inspired by "vimr-256noir" by Andreas van Cranenburgh
+# neo-noir is the more high contrast version of noir256 theme
+
+"ui.background" = { bg = "bg0" }
+"ui.menu" = { fg = "fg1", bg = "bg1" }
+"ui.menu.selected" = { fg = "fg0", bg = "gray0" }
+"ui.linenr" = { fg = "gray0", bg = "bg0" }
+"ui.popup" = { bg = "bg1" }
+"ui.window" = { fg = "gray0", bg = "bg1" }
+"ui.linenr.selected" = { fg = "fg1", bg = "bg0"}
+"ui.selection" = { bg = "gray0" }
+"comment" = { fg = "gray1", modifiers = ["italic"] }
+"ui.cursorline" = { bg = "gray0" }
+"ui.statusline" = { fg = "fg1", bg = "bg1" }
+"ui.statusline.inactive" = { fg = 'dark_gray', bg = 'bg1' }
+"ui.statusline.insert" = {fg = "light_black", bg = "gray0", modifiers = ["bold"]}
+"ui.statusline.normal" = {fg = "fg1", bg = "bg1"}
+"ui.statusline.select" = {fg = "fg1", bg = "light_black", modifiers = ["bold"]}
+"ui.cursor.primary" = { fg = "fg0", modifiers = ["reversed"] }
+"ui.cursorline.primary" = { bg = "light_black" }
+"ui.cursor.primary.insert" = { bg = "red0", modifiers = ["reversed"]  }
+"ui.cursorline.secondary" = { bg = "light_black" }
+"ui.cursor.match" = { fg = "gray1", modifiers = ["bold", "reversed"] }
+"ui.text" = "fg1"
+"operator" = "gray3"
+"ui.text.focus" = "fg1"
+"variable" = "white3"
+"constant.numeric" = "red0"
+"constant" = "white3"
+"attribute" = "red0"
+"type" = { fg = "white3", modifiers = ["italic"] }
+"string"  = "white4"
+"variable.other.member" = "white1"
+"constant.character.escape" = "gray2"
+"function" = "white0"
+"constructor" = "white0"
+"special" = "white0"
+"keyword" = { fg = "white2", modifiers = ["bold", "italic"] }
+"label" = "white2"
+"namespace" = "white3"
+"ui.help" = { fg = "fg1", bg = "bg1" }
+"ui.virtual.whitespace" = { fg = "gray0" }
+"ui.virtual.ruler" = { bg = "light_black" }
+# "ui.virtual.jump-label" = { fg = "white3", modifiers = ["reversed"] }
+"ui.virtual.jump-label" = { fg = "fg0", modifiers = ["bold", "italic"] }
+"punctuation" = "gray2"
+
+"markup.heading" = "#17beff"
+"markup.list" = "fg1"
+"markup.bold" = { fg="red0", modifiers = ["bold"] }
+"markup.italic" = { fg="yellow0", modifiers = ["italic"] }
+"markup.link.url" = "white3"
+"markup.link.text" = "fg0"
+"markup.quote" = "white4"
+"markup.raw" = "white4"
+
+"diff.plus" = "white4"
+"diff.delta" = "fg0"
+"diff.minus" = "red0"
+
+"diagnostic" = { underline = {color="red0", style="curl"}}
+"ui.gutter" = { bg = "bg0" }
+"hint" = "gray0"
+"debug" = "yellow0"
+"info" = "yellow0"
+"warning" = "yellow0"
+"error" = "red0"
+
+[palette]
+bg0         = "#000000" # default background
+bg1         = "#181818" # lighter background (status bars, folding marks)
+
+light_black = "#1b1b1b" # cursorline, ruler
+
+gray0       = "#606060" # line numbers, selection, windows, whitespaces, hints
+gray1       = "#808080" # comments
+gray2       = "#808080" # punctuation, escape characters 
+gray3       = "#808080" # operators
+
+fg0         = "#ffffff" # cursor and diff.delta
+fg1         = "#ffffff" # default foreground
+
+yellow0     = "#f0e200" # debug, info, warnings
+red0        = "#eb0000" # constant numbers
+
+white0      = "#ffffff" # functions, constructors
+white1      = "#ffffff" # member variables
+white2      = "#ffffff" # keywords, labels
+white3      = "#afafaf" # variables, constants, types, namespaces, search text background 
+white4      = "#b7f7ae" # strings, diff.plus
+# white4      = "#98ff71" # strings, diff.plus
