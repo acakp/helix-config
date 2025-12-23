@@ -32,8 +32,23 @@ name = "binary"
 program = "{0}"
 runInTerminal = true
 
-# [[language]]
-# name = "c-sharp"
-# [language-server.omnisharp]
-# command = "omnisharp"
-# args = [ "C:/Users/newyo/Documents/omnisharp-win-x64-net6.0/OmniSharp.dll", "--languageserver" ]
+# Postgres LSP
+# it configured to use postgrestools.
+# to use it you need to download binary from here:
+# https://github.com/supabase-community/postgres-language-server/releases/latest
+# then chmod +x it and place in /usr/local/bin/
+[[language]]
+name = "sql"
+language-servers = ["pgtools"]
+auto-format = true
+roots = ["postgrestools.jsonc", ".git"]
+file-types = ["sql"]
+
+[language.indent]
+tab-width = 2
+unit = "  "
+
+[language-server.pgtools]
+command = "postgrestools"
+args = ["lsp-proxy"]
+timeout = 10

@@ -1,4 +1,5 @@
-theme = "noir256"
+# theme = "noir256"
+theme = "neo-noir"
 
 [editor]
 true-color = true
