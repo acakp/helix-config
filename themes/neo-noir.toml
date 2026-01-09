@@ -46,7 +46,7 @@
 "ui.virtual.jump-label" = { fg = "fg0", modifiers = ["bold", "italic"] }
 "punctuation" = "gray2"
 
-"markup.heading" = "#17beff"
+"markup.heading" = { fg="#17beff", modifiers = ["bold"] }
 "markup.list" = "fg1"
 "markup.bold" = { fg="red0", modifiers = ["bold"] }
 "markup.italic" = { fg="yellow0", modifiers = ["italic"] }
