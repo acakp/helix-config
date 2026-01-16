@@ -1,6 +1,6 @@
 # The structure is based on "autumn" by Jens Getreu.
 # This color scheme is inspired by "vimr-256noir" by Andreas van Cranenburgh
-# neo-noir is the more high contrast version of noir256 theme
+# neo-noir is the higher contrast version of noir256 theme
 
 "ui.background" = { bg = "bg0" }
 "ui.menu" = { fg = "fg1", bg = "bg1" }
@@ -9,7 +9,7 @@
 "ui.popup" = { bg = "bg1" }
 "ui.window" = { fg = "gray0", bg = "bg1" }
 "ui.linenr.selected" = { fg = "fg1", bg = "bg0"}
-"ui.selection" = { bg = "gray0" }
+"ui.selection" = { bg = "gray2" }
 "comment" = { fg = "gray1", modifiers = ["italic"] }
 "ui.cursorline" = { bg = "gray0" }
 "ui.statusline" = { fg = "fg1", bg = "bg1" }
@@ -32,7 +32,7 @@
 "type" = { fg = "white3", modifiers = ["italic"] }
 "string"  = "white4"
 "variable.other.member" = "white1"
-"constant.character.escape" = "gray2"
+"constant.character.escape" = "gray1"
 "function" = "white0"
 "constructor" = "white0"
 "special" = "white0"
@@ -44,7 +44,7 @@
 "ui.virtual.ruler" = { bg = "light_black" }
 # "ui.virtual.jump-label" = { fg = "white3", modifiers = ["reversed"] }
 "ui.virtual.jump-label" = { fg = "fg0", modifiers = ["bold", "italic"] }
-"punctuation" = "gray2"
+"punctuation" = "gray1"
 
 "markup.heading" = { fg="#17beff", modifiers = ["bold"] }
 "markup.list" = "fg1"
@@ -71,11 +71,11 @@
 bg0         = "#000000" # default background
 bg1         = "#181818" # lighter background (status bars, folding marks)
 
-light_black = "#1b1b1b" # cursorline, ruler
+light_black = "#151515" # cursorline, ruler
 
 gray0       = "#606060" # line numbers, selection, windows, whitespaces, hints
-gray1       = "#808080" # comments
-gray2       = "#808080" # punctuation, escape characters 
+gray1       = "#808080" # comments, punctuation, escape characters 
+gray2       = "#303030" # selection
 gray3       = "#808080" # operators
 
 fg0         = "#ffffff" # cursor and diff.delta
