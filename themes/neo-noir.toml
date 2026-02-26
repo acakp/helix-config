@@ -1,5 +1,5 @@
 # The structure is based on "autumn" by Jens Getreu.
-# This color scheme is inspired by "vimr-256noir" by Andreas van Cranenburgh
+# This color scheme is inspired by "vim-256noir" by Andreas van Cranenburgh
 # neo-noir is the higher contrast version of noir256 theme
 
 "ui.background" = { bg = "bg0" }

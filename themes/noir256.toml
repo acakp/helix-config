@@ -1,5 +1,5 @@
 # The structure is based on "autumn" by Jens Getreu.
-# This color scheme is inspired by "vimr-256noir" by Andreas van Cranenburgh
+# This color scheme is inspired by "vim-256noir" by Andreas van Cranenburgh
 
 "ui.background" = { bg = "bg0" }
 "ui.menu" = { fg = "fg1", bg = "bg1" }
@@ -12,7 +12,7 @@
 "comment" = { fg = "gray1", modifiers = ["italic"] }
 "ui.cursorline" = { bg = "gray0" }
 "ui.statusline" = { fg = "fg1", bg = "bg1" }
-"ui.statusline.inactive" = { fg = 'dark_gray', bg = 'bg1' }
+"ui.statusline.inactive" = { bg = "bg1" }
 "ui.statusline.insert" = {fg = "light_black", bg = "gray0", modifiers = ["bold"]}
 "ui.statusline.normal" = {fg = "fg1", bg = "bg1"}
 "ui.statusline.select" = {fg = "fg1", bg = "light_black", modifiers = ["bold"]}
