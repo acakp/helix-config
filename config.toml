@@ -31,6 +31,10 @@ newline = ""
 render = true
 character = "▏"
 
+[editor.gutters]
+# layout = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+layout = ["diagnostics", "spacer", "diff"]
+
 [editor.gutters.line-numbers]
 min-width = 1
 
