@@ -64,3 +64,8 @@ name = "javascript"
 language-servers = [ "typescript-language-server" ]
 formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
 auto-format = true
+
+[[language]]
+name = "css"
+language-servers = [ "tailwindcss-ls" ]
+# language-servers = [ "tailwindcss-ls", "vscode-css-language-server" ]
