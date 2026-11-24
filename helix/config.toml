@@ -1,0 +1,50 @@
+# theme = "noir256"
+theme = "macos-subtle"
+
+[editor]
+true-color = true
+cursorline = true
+undercurl = true
+
+[editor.statusline]
+right = ["diagnostics", "selections", "register", "position", "position-percentage", "file-encoding"]
+mode.normal = "nor"
+mode.insert = "-- INSERT --"
+mode.select = "-- SELECT --"
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = ""
+
+[editor.cursor-shape]
+insert = "bar"
+# normal = "block"
+# select = "underline"
+
+[editor.whitespace.render]
+newline = "all"
+
+[editor.whitespace.characters]
+newline = ""
+
+[editor.indent-guides]
+render = true
+character = "▏"
+
+[editor.gutters]
+# layout = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+layout = ["diagnostics", "spacer", "diff"]
+
+[editor.gutters.line-numbers]
+min-width = 1
+
+[keys.normal]
+# unselects selecton and removes additional cursors with esc
+esc = ["collapse_selection", "keep_primary_selection"]
+[keys.normal.ret]
+h = ":sh foot helix %{buffer_name}"
+l = ":lsp-restart"
+# t = ":sh ghostty --working-directory=$(dirname %{buffer_name})"
+# ret = ":sh ghostty --working-directory=$(dirname %{buffer_name})"
+t = ":sh foot -D $(dirname %{buffer_name})"
+ret = ":sh foot -D $(dirname %{buffer_name})"

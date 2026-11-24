@@ -1,0 +1,71 @@
+[[language]]
+name = "go"
+
+[language-server.gopls.config]
+"formatting.gofumpt" = true 
+
+ # for python install ruff and python-lsp-server packages
+[[language]]
+name = "python"
+
+language-servers = ["ruff", "pylsp"]
+auto-format = true
+
+[language-server.pylsp.config.pylsp]
+plugins.ruff.enabled = true
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[[language]]
+name = "rust"
+
+[language.debugger]
+command = "codelldb"
+name = "codelldb"
+port-arg = "--port {}"
+transport = "tcp"
+
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+[[language.debugger.templates.completion]]
+completion = "filename"
+name = "binary"
+
+[language.debugger.templates.args]
+program = "{0}"
+runInTerminal = true
+
+# Postgres LSP
+# it configured to use postgrestools.
+# to use it you need to download binary from here:
+# https://github.com/supabase-community/postgres-language-server/releases/latest
+# then chmod +x it and place in /usr/local/bin/
+[[language]]
+name = "sql"
+language-servers = ["pgtools"]
+auto-format = true
+roots = ["postgrestools.jsonc", ".git"]
+file-types = ["sql"]
+
+[language.indent]
+tab-width = 2
+unit = "  "
+
+[language-server.pgtools]
+command = "postgrestools"
+args = ["lsp-proxy"]
+timeout = 10
+
+[[language]]
+name = "javascript"
+language-servers = [ "typescript-language-server" ]
+formatter = { command = "prettier", args = [ "--parser", "typescript" ] }
+auto-format = true
+
+[[language]]
+name = "css"
+language-servers = [ "tailwindcss-ls" ]
+# language-servers = [ "tailwindcss-ls", "vscode-css-language-server" ]

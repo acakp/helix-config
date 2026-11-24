@@ -1,0 +1,90 @@
+# The structure is based on `autumn` by Jens Getreu.
+# This color scheme is inspired by 'vim-256noir' by Andreas van Cranenburgh
+
+"ui.background" = { bg = "bg0" }
+"ui.menu" = { fg = "fg1", bg = "bg1" }
+"ui.menu.selected" = { fg = "bg1", bg = "gray0" }
+"ui.linenr" = { fg = "gray0", bg = "bg0" }
+"ui.popup" = { bg = "bg1" }
+"ui.window" = { fg = "gray0", bg = "bg1" }
+"ui.linenr.selected" = { fg = "fg1", bg = "bg0"}
+"ui.selection" = { bg = "gray0" }
+"comment" = { fg = "gray1", modifiers = ["italic"] }
+"ui.cursorline" = { bg = "gray0" }
+"ui.statusline" = { fg = "fg1", bg = "bg1" }
+"ui.statusline.inactive" = { bg = "bg1" }
+"ui.statusline.insert" = {fg = "light_black", bg = "gray0", modifiers = ["bold"]}
+"ui.statusline.normal" = {fg = "fg1", bg = "bg1"}
+"ui.statusline.select" = {fg = "fg1", bg = "light_black", modifiers = ["bold"]}
+"ui.cursor" = { fg = "gray0", modifiers = ["reversed"] }
+"ui.cursor.primary" = { fg = "fg0", modifiers = ["reversed"] }
+"ui.cursorline.primary" = { bg = "light_black" }
+"ui.cursorline.secondary" = { bg = "light_black" }
+"ui.text" = "fg1"
+"operator" = "gray3"
+"ui.text.focus" = "fg1"
+"variable" = "white3"
+"constant.numeric" = "red0"
+"constant" = "white3"
+"attribute" = "red0"
+"type" = { fg = "white3", modifiers = ["italic"] }
+"ui.cursor.match" = { fg = "white3", modifiers = ["bold", "slow_blink"] }
+"string"  = "white4"
+"variable.other.member" = "white1"
+"constant.character.escape" = "gray1"
+"function" = "white0"
+"constructor" = "white0"
+"special" = "white0"
+"keyword" = { fg = "white2", modifiers = ["bold"] }
+"label" = "white2"
+"namespace" = "white3"
+"ui.help" = { fg = "fg1", bg = "bg1" }
+"ui.virtual.whitespace" = { fg = "gray0" }
+"ui.virtual.ruler" = { bg = "light_black" }
+# "ui.virtual.jump-label" = { fg = "white3", modifiers = ["reversed"] }
+"ui.virtual.jump-label" = { fg = "fg0", modifiers = ["bold", "italic"] }
+"punctuation" = "gray2"
+
+"markup.heading" = "white0"
+"markup.list" = "fg1"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = {  modifiers = ["italic"] }
+"markup.link.url" = "white3"
+"markup.link.text" = "fg0"
+"markup.quote" = "white1"
+"markup.raw" = "white4"
+
+"diff.plus" = "white4"
+"diff.delta" = "fg0"
+"diff.minus" = "red0"
+
+"diagnostic" = { underline = {color="red0", style="curl"}}
+"ui.gutter" = { bg = "bg0" }
+"hint" = "gray0"
+"debug" = "yellow0"
+"info" = "yellow0"
+"warning" = "yellow0"
+"error" = "red0"
+
+[palette]
+bg0         = "#fafafa" # default background
+bg1         = "#eeeeee" # lighter background (status bars, folding marks)
+
+light_black = "#ffffff" # cursorline, ruler
+
+gray0       = "#cfcfcf" # line numbers, selection, windows, whitespaces, hints
+gray1       = "#a9a9a9" # comments, escape characters
+gray2       = "#9d9d9d" # punctuation 
+gray3       = "#828282" # operators
+
+fg0         = "#d4d4d4" # cursor and diff.delta
+fg1         = "#212121" # default foreground
+
+yellow0     = "#ffcc00" # debug, info, warnings
+red0        = "#ef0000" # constant numbers
+
+white0      = "#000000" # functions, constructors
+white1      = "#696969" # member variables
+white2      = "#000000" # keywords, labels
+white3      = "#525252" # variables, constants, types, namespaces, search text background 
+white4      = "#4c4c4c" # strings, diff.plus
